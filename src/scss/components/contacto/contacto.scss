@@ -1,0 +1,305 @@
+.contacto{
+
+    &__redesSociales{
+        padding: 20px 0;
+
+        &-titulo{
+            text-align: center;
+        }
+
+        &__contenedor{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+
+            @media screen and (min-width: 900px){
+                justify-content: center;
+            }
+
+            &__grupo{
+                align-items: start;
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+
+                @media screen and (min-width: 900px){
+                    width: 40%;
+                }
+
+                &__item{
+                    align-items: center;
+                    display:flex;
+                    justify-content: start;
+
+                    &-texto{
+                        color: black;
+                        margin: 0;
+                        text-decoration: none;
+
+                        @media screen and (min-width: 900px){
+                            font-size:1.5rem;
+                        }
+                    }
+
+                    &-icono{
+                        height: 20px;
+                        margin-right: 10px;
+                        width: 20px;
+
+                        @media screen and (min-width: 900px){
+                            font-size:1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__dudas{
+
+        align-items: center;
+        background-color: #F2EFEF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        
+        &__vendor{
+
+            &-titulo, &-texto{
+                text-align: center;
+            }
+        }
+
+        &__formulario{
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (min-width: 900px){
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            &__grupo{
+
+                @media screen and (min-width:992px){
+                    width: 150%;
+                }
+
+                &-label{
+                    cursor: pointer;
+                    display:block;
+                    font-weight: 700;
+                    padding: 10px;
+                    
+                }
+
+                &__input{
+                    position: relative;
+
+                    &-correcto{
+                        position: relative;
+
+                        .contacto__dudas__formulario__grupo__input{
+    
+                            &-input, &-textarea{
+                                border: 2px solid green;
+                                box-shadow: none;
+                                color: green;
+                            }
+    
+                            &-icono{
+                                color: green;
+
+                                &-textarea{
+                                    color:green;
+                                }
+                            }
+                        }
+                    }
+
+                    &-incorrecto{
+                        position: relative;
+
+                        .contacto__dudas__formulario__grupo__input{
+
+                            &-input, &-textarea{
+                                border: 2px solid red;
+                                box-shadow: none;
+                                color: red;
+                            }
+
+                            &-icono{
+                                color:red;
+
+                                &-textarea{
+                                    color:red;
+                                    
+                                }
+                            }
+                        }
+                    }
+
+                    &-input, &-textarea{
+                        border: 2px solid transparent;
+                        border-radius: 5px;
+                        box-shadow: 1px 1px 5px black;
+                        padding: 5px 10px 5px 30px;;
+                        transition: .3s ease all;
+                        outline:none;
+                        resize: none;
+                        width: 100%;
+                    }
+
+                    &-textarea{
+                        @media screen and (min-width:992px){
+                            rows: 7;
+                        }
+                    }
+
+                    &-icono{
+                        bottom: 10px;
+                        left: 10px;
+                        position: absolute;
+                        opacity: 1;
+                        z-index: 100;
+
+                        &-textarea{
+                            bottom: 40px;
+                            left: 10px;
+                            position: absolute;
+                            opacity: 1;
+                            z-index: 100;
+
+                            @media screen and (min-width: 900px){
+                                bottom: 90px;
+                                left: 10px;
+                                position: absolute;
+                                opacity: 1;
+                                z-index: 100;
+                            }
+                        }
+                    }
+                }
+
+                &-error{
+                    color: red;
+                    display:none;
+                    font-size: .7rem;
+                    margin: 7px 0 0;
+
+                    &-activo{
+                        color: red;
+                        display:block;
+                        font-size: .7rem;
+                        margin: 7px 0 0;
+                        
+                    }
+                }
+
+                &__enviar{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    &-btn{
+                        background-color: slateblue;
+                        border-radius: 5px;
+                        color: #fff;
+                        cursor: pointer;
+                        margin: 10px 0;
+                        padding: 10px 20px;
+                        outline: none;
+                        text-align:center;
+                        width: 80%;
+                    }
+
+                    &-texto{
+                        display:none;
+
+                        &-satisfactorio{
+                            color: green;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__newsletter{
+        background-color: #E5E5E5;
+        padding: 20px 0;
+
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+
+            &__vendor{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                &-titulo{
+                    font-size: 1rem;
+                }
+                &-texto{
+                    font-size:   .8rem;
+                }
+            }
+
+            &__form{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &__input{
+                    position:relative;
+                    
+                    &-input{
+                        border: 2px solid transparent;
+                        border-radius: 5px;
+                        box-shadow: 1px 1px 5px black;
+                        padding: 5px 10px 5px 30px;;
+                        transition: .3s ease all;
+                        outline:none;
+                        resize: none;
+                        width: 100%;
+                    }
+
+                    &-icono{
+                        bottom: 10px;
+                        position: absolute;
+                        left: 10px;
+                        
+                        
+                    }
+                }
+
+                &__btn{
+
+                    &-btn{
+                        background-color: slateblue;
+                        border-radius: 5px;
+                        color: #fff;
+                        cursor: pointer;
+                        margin: 10px 0;
+                        margin-left: 10px;
+                        padding: 10px 20px;
+                        outline:none;
+                        text-align:center;
+                        width: 100%;
+                    }
+
+                    &-satisfactorio{
+                        color: green;
+                        display:none;
+                    }
+                }
+            }
+        }
+        
+    }
+}

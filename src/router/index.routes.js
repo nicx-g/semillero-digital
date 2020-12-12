@@ -1,5 +1,5 @@
 import Home from "../controllers/Home.controller.js";
-import Presentacion from '../controllers/presentacion.controller.js'
+import Contacto from '../controllers/Contacto.controller.js'
 
 // Importamos todos los componentes con su lógica correspondiente
 
@@ -20,8 +20,8 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
         case '#/home':{
             return root.appendChild(Home())
         }
-        case '#/presentacion':{
-            return root.appendChild(Presentacion())
+        case '#/contacto':{
+            return root.appendChild(Contacto())
         }
     }
 }

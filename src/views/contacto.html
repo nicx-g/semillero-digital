@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../libraries/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libraries/css/fontAwesome5.15.min.css">
+</head>
+<body>
+    
+    <div class="contacto">
+        <div class="container">
+            <div class="contacto__redesSociales">
+                <h1 class="contacto__redesSociales-titulo">Contactanos</h1>
+                <div class="contacto__redesSociales__contenedor">
+                    <div class="contacto__redesSociales__contenedor__grupo">
+                        <div class="contacto__redesSociales__contenedor__grupo__item">
+                            <i class="contacto__redesSociales__contenedor__grupo__item-icono far fa-envelope"></i>
+                            <a href="#" class="contacto__redesSociales__contenedor__grupo__item-texto">Texto</a>
+                        </div>
+                        <div class="contacto__redesSociales__contenedor__grupo__item">
+                            <i class="contacto__redesSociales__contenedor__grupo__item-icono fab fa-facebook-f"></i>
+                            <a href="#" class="contacto__redesSociales__contenedor__grupo__item-texto">sitio web</a>
+                        </div>
+                        <div class="contacto__redesSociales__contenedor__grupo__item">
+                            <i class="contacto__redesSociales__contenedor__grupo__item-icono fab fa-instagram"></i>
+                            <a href="#" class="contacto__redesSociales__contenedor__grupo__item-texto">sitio web</a>
+                        </div>
+                        <div class="contacto__redesSociales__contenedor__grupo__item">
+                            <i class="contacto__redesSociales__contenedor__grupo__item-icono fab fa-linkedin-in"></i>
+                            <a href="#" class="contacto__redesSociales__contenedor__grupo__item-texto">sitio web</a>
+                        </div>
+                        <div class="contacto__redesSociales__contenedor__grupo__item">
+                            <i class="contacto__redesSociales__contenedor__grupo__item-icono fab fa-whatsapp"></i>
+                            <a href="#" class="contacto__redesSociales__contenedor__grupo__item-texto">numero</a>
+                        </div>
+                    </div>
+                    <div class="contacto__redesSociales__contenedor__img">
+                        <img class="contacto__redesSociales__contenedor__img-img img-fluid" src="https://via.placeholder.com/250x200" alt="Descripción a definir">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="contacto__dudas">
+                <div class="container">
+                    <div class="contacto__dudas__vendor">
+                        <h2 class="contacto__dudas__vendor-titulo">¿Tenes dudas?</h2>
+                        <p class="contacto__dudas__vendor-texto">Dejanos tu mensaje y nos contactaremos con vos</p>
+                    </div>
+                    <form id="contacto-formulario" class="contacto__dudas__formulario" method="POST">
+                        <div>
+                            <div id="contacto__dudas__formulario__grupo__contactoNombreYApellido" class="contacto__dudas__formulario__grupo">
+                                <label for="contactoNombreyApellido"class="contacto__dudas__formulario__grupo-label">Nombre y apellido</label>
+                                <div id="contacto__dudas__formulario__grupo__contactoNombreYApellido" class="contacto__dudas__formulario__grupo__input">
+                                    <input type="text" 
+                                    id="contactoNombreyApellido"
+                                    name="contactoNombreyApellido"
+                                    class="contacto__dudas__formulario__grupo__input-input">
+                                    <i class="contacto__dudas__formulario__grupo__input-icono"></i>
+                                </div>
+                                <p class="contacto__dudas__formulario__grupo-error">Error notificacion</p>
+                            </div>
+                            <div id="contacto__dudas__formulario__grupo__contactoMail" class="contacto__dudas__formulario__grupo">
+                                <label for="contactoMail" class="contacto__dudas__formulario__grupo-label">Mail</label>
+                                <div id="contacto__dudas__formulario__grupo__contactoMail" class="contacto__dudas__formulario__grupo__input">
+                                    <input type="text" 
+                                    id="contactoMail"
+                                    name="contactoMail"
+                                    class="contacto__dudas__formulario__grupo__input-input">
+                                    <i class="contacto__dudas__formulario__grupo__input-icono  far fa-envelope"></i>
+                                </div>
+                                <p class="contacto__dudas__formulario__grupo-error">Error notificacion</p>
+                            </div>
+                            <div id="contacto__dudas__formulario__grupo__contactoTelefono" class="contacto__dudas__formulario__grupo">
+                                <label for="contactoTelefono" class="contacto__dudas__formulario__grupo-label">Celular</label>
+                                <div id="contacto__dudas__formulario__grupo__contactoTelefono" class="contacto__dudas__formulario__grupo__input">
+                                    <input type="text" 
+                                    id="contactoTelefono"
+                                    name="contactoTelefono"
+                                    class="contacto__dudas__formulario__grupo__input-input">
+                                    <i class="contacto__dudas__formulario__grupo__input-icono"></i>
+                                </div>
+                                <p class="contacto__dudas__formulario__grupo-error">Error notificacion</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="contacto__dudas__formulario__grupo__contactoMensaje" class="contacto__dudas__formulario__grupo">
+                                <label for="contactoMensaje" class="contacto__dudas__formulario__grupo-label">Mensaje</label>
+                                <div id="contacto__dudas__formulario__grupo__contactoMensaje" class="contacto__dudas__formulario__grupo__input">
+                                    <textarea name="contactoMensaje" 
+                                    id="contactoMensaje"
+                                    rows="4"
+                                    class="contacto__dudas__formulario__grupo__input-textarea"></textarea>
+                                    <i class="contacto__dudas__formulario__grupo__input-icono-textarea"></i>
+                                </div>
+                                <p class="contacto__dudas__formulario__grupo-error">Error notificacion</p>
+                            </div>
+                            <div class="contacto__dudas__formulario__grupo contacto__dudas__formulario__grupo__enviar">
+                                <button
+                                class="contacto__dudas__formulario__grupo__enviar-btn" 
+                                type="submit">Enviar</button>
+                                <p class="contacto__dudas__formulario__grupo__enviar-texto">Formulario enviado exitosamente</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contacto__newsletter">
+            <div class="container">
+                <div class="contacto__newsletter__contenedor">
+                    <div class="contacto__newsletter__contenedor__vendor">
+                        <h2 class="contacto__newsletter__contenedor__vendor-titulo">Suscribite al Newsletter</h2>
+                        <p class="contacto__newsletter__contenedor__vendor-texto">Para enterarte de las últimas novedades</p>
+                    </div>
+                    <form class="contacto__newsletter__contenedor__form" method="POST">
+                        <div class="contacto__newsletter__contenedor__form__input">
+                            <input
+                            required 
+                            class="contacto__newsletter__contenedor__form__input-input"
+                            type="email">
+                            <i class="contacto__newsletter__contenedor__form__input-icono far fa-envelope"></i>
+                        </div>
+                        <div class="contacto__newsletter__contenedor__form__btn">
+                            <button class="contacto__newsletter__contenedor__form__btn-btn" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../libraries/js/jquery.min.js"></script>
+    <script src="../libraries/js/popper.min.js"></script>
+    <script src="../libraries/js/bootstrap.min.js"></script>
+</body>
+</html>
