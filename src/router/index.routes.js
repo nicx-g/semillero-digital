@@ -6,6 +6,7 @@ import Newsletter from '../controllers/global/Newsletter.controller.js'
 import Blog from '../controllers/Blog.controller.js'
 import Cursos from '../controllers/Cursos.controller.js'
 import NavBar from '../controllers/global/Nav.controller.js'
+import Footer from '../controllers/global/Footer.controller.js'
 
 // Importamos todos los componentes con su lógica correspondiente
 
@@ -27,7 +28,8 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
             return (
                 root.appendChild(NavBar()),
                 root.appendChild(Home()),
-                root.appendChild(Newsletter())
+                root.appendChild(Newsletter()),
+                root.appendChild(Footer())
              )
         }
 
@@ -35,7 +37,8 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
             return (
                 root.appendChild(NavBar()),
                 root.appendChild(Contacto()),
-                root.appendChild(Newsletter())
+                root.appendChild(Newsletter()),
+                root.appendChild(Footer())
             )
             
         }
@@ -44,14 +47,16 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
             return (
                 root.appendChild(NavBar()),
                 root.appendChild(Blog()),
-                root.appendChild(Newsletter())
+                root.appendChild(Newsletter()),
+                root.appendChild(Footer())
             )
         }
         case '#/cursos':{
             return (
                 root.appendChild(NavBar()),
                 root.appendChild(Cursos()),
-                root.appendChild(Newsletter())
+                root.appendChild(Newsletter()),
+                root.appendChild(Footer())
              )
         }
 
@@ -59,14 +64,16 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
             return (
                 root.appendChild(NavBar()),
                 root.appendChild(QuieroSerParte()),
-                root.appendChild(Newsletter())
+                root.appendChild(Newsletter()),
+                root.appendChild(Footer())
             )
         }
 
         case '#/quiero-ser-parte/formulario':{
             return (
                 root.appendChild(PostulacionSembradoresForm()),
-                root.appendChild(Newsletter())
+                root.appendChild(Newsletter()),
+                root.appendChild(Footer())
                 )
         }
     }
