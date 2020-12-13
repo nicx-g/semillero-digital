@@ -1,0 +1,222 @@
+.postulacionSembradores{
+
+    &__modal{
+
+        align-items: center;
+        background-color: #F2EFEF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        
+        &__vendor{
+
+            &-titulo, &-texto{
+                text-align: center;
+            }
+        }
+
+        &__formulario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media screen and (min-width: 900px){
+                justify-content: space-evenly;
+            }
+
+            .contenedorPostulacion{
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (min-width:900px){
+                    flex-direction: row;
+                    width: 52%;
+                }
+                .postulacionSembradores__modal__formulario__grupo{
+                    @media screen and (min-width:900px){
+                        margin: 0 2%;
+                    }
+                }
+            }
+
+            &__grupo{
+
+                @media screen and (min-width:900px){
+                    width: 50%;
+                }
+
+                &-label{
+                    cursor: pointer;
+                    display:block;
+                    font-weight: 700;
+                    padding: 10px;
+                    
+                }
+
+                &__input{
+                    display:flex;
+                    flex-direction: column;
+                    position: relative;
+
+
+                    &-correcto{
+                        position: relative;
+
+                        .postulacionSembradores__modal__formulario__grupo__input{
+    
+                            &-input{
+                                border: 2px solid green;
+                                box-shadow: none;
+                                color: green;
+                            }
+    
+                            &-icono{
+                                color: green;
+                            }
+                        }
+                    }
+
+                    &-incorrecto{
+                        position: relative;
+
+                        .postulacionSembradores__modal__formulario__grupo__input{
+
+                            &-input{
+                                border: 2px solid red;
+                                box-shadow: none;
+                                color: red;
+                            }
+
+                            &-icono{
+                                color:red;
+                            }
+                        }
+                    }
+
+                    &-input{
+                        border: 2px solid transparent;
+                        border-radius: 5px;
+                        box-shadow: 1px 1px 5px black;
+                        padding: 5px 10px 5px 30px;;
+                        transition: .3s ease all;
+                        outline:none;
+                        resize: none;
+                        width: 100%;
+                    }
+
+                    &-select{
+                        padding: 10px 20px;
+                        width: 100%;
+                    }
+
+                    &-label{
+                        display: block;
+                        margin-bottom: 30px;
+                        padding:5px 0 5px 40px; /* Damos un padding de 60px para posicionar el elemento <i> en este espacio*/
+                        position: relative;
+                        
+
+                        input{
+                            // visibility: hidden;
+                            opacity: 0;
+                            transform: translateX(-16px);
+                        }
+
+                        input + i{
+                            background: #2AC176;
+                            border:2px solid rgba(0,0,0,0.2);
+                            left: 0;
+                            position: absolute; 
+                            top: 0;
+                        }
+
+                        input[type=radio] + i{
+                            background-color: #2AC176;
+                            border-radius: 2px;
+                            font-size: 1.2rem;
+                            height: 30px;
+                            left: 15px;
+                            width: 30px;
+                        }
+
+                        input[type=radio] + i::before{
+                            border-radius: 2px;
+                            content: '\f058';
+                            color: #fff;
+                            display: block;
+                            height: 18px;
+                            position: absolute;
+                            left: 4px;
+                            opacity: 0;
+                            top: 4px;
+                            transition: all 0.25s ease;
+                            transform: scale(0);
+                            width: 18px;
+                            z-index: 1;
+                        }
+
+                        input[type=radio]:checked + i:before{
+	                        opacity: 1;
+                            transform: scale(1);
+                        }
+
+                        &:hover input[type=radio]:not(:checked) + i{
+                            background: #B1E8CD;
+                        }
+                    }
+
+                    &-icono{
+                        bottom: 10px;
+                        left: 10px;
+                        position: absolute;
+                        opacity: 1;
+                        z-index: 100;
+                    }
+                }
+
+                &-error{
+                    color: red;
+                    display:none;
+                    font-size: .7rem;
+                    margin: 7px 0 0;
+
+                    &-activo{
+                        color: red;
+                        display:block;
+                        font-size: .7rem;
+                        margin: 7px 0 0;
+                        
+                    }
+                }
+
+                &__enviar{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    &-btn{
+                        background-color: slateblue;
+                        border-radius: 5px;
+                        color: #fff;
+                        cursor: pointer;
+                        margin: 10px 0;
+                        padding: 10px 20px;
+                        outline: none;
+                        text-align:center;
+                        width: 80%;
+                    }
+
+                    &-texto{
+                        display:none;
+
+                        &-satisfactorio{
+                            color: green;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
