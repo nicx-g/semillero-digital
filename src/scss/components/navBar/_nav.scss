@@ -1,0 +1,38 @@
+.navbarSemillero{
+
+    div{
+        
+        ul{
+
+            li{
+
+
+                margin: 10px;
+                padding: 5px 10px;
+
+                &:nth-child(5){
+                    display: none;
+                    @media screen and(min-width:900px){
+                        display:block;
+                    }
+                }
+                &:nth-child(6){
+                    background-color: #A5DF2A;
+                    box-shadow: 1px 1px 5px #000;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+                
+                &:nth-child(7){
+                    box-shadow: 1px 1px 5px #000;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}   
