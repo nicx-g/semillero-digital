@@ -1,0 +1,71 @@
+.footerSemillero{
+    padding: 20px 0;
+
+    &__contenedor{
+        margin: 10px 0;
+
+        &__links{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            &__nav{
+
+                &__ul{
+
+                    @media screen and (min-width:900px){
+                        display: flex;
+                    }
+
+                    &__li{
+                        list-style: none;
+                        margin: 10px 0;
+
+                        @media screen and (min-width:900px){
+                            margin: 0 10px;
+                        }
+
+                        &-a{
+                            color: #000;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__socialMedia{
+            align-items: center;
+            display: flex;
+
+            &__link{
+
+
+                text-decoration: none;
+
+                i{
+                    color: #333;
+                    border-radius: 50%;
+                    background-color: #d4d4d4;
+                    font-size: 1.5rem;
+                    padding: 10px 10px;;
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+
+    &__copyright{
+        margin-top: 10px 0;
+
+        &__vendor{
+
+            &-texto{
+
+                border-top: 2px solid #999;                
+                padding: 20px;
+                text-align: center;;
+            }
+        }
+    }
+}
