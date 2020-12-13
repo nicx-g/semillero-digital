@@ -14,7 +14,7 @@ export default () => {
                         <button id="quieroSumarme-btn" class="quieroSerParte__header__contenedor__vendor-btn">Quiero sumarme!</button>
                     </div>
                     <div class="quieroSerParte__header__contenedor__img">
-                        <img class="quieroSerParte__header__contenedor__img-img" src="https://via.placeholder.com/300x300" alt="Imagen de quieroSerParte">
+                        <img class="quieroSerParte__header__contenedor__img-img" src="./src/resources/images/21.jpg" alt="Imagen de quieroSerParte">
                     </div>
                 </div>
              </div>
@@ -25,7 +25,7 @@ export default () => {
                 <div class="quieroSerParte__sembradoresReview__contenedor">
                     <div class="quieroSerParte__sembradoresReview__contenedor__item">
                         <div class="quieroSerParte__sembradoresReview__contenedor__item__img">
-                            <img class="img-fluid quieroSerParte__sembradoresReview__contenedor__item__img-img" src="http://via.placeholder.com/300x300" alt="Foto de un sembrador">
+                            <img class="img-fluid quieroSerParte__sembradoresReview__contenedor__item__img-img" src="./src/resources/images/review1.JPEG" alt="Foto de un sembrador">
                         </div>
                         <div class="quieroSerParte__sembradoresReview__contenedor__item__vendor">
                             <p class="quieroSerParte__sembradoresReview__contenedor__item__vendor-texto">"Participar de este proyecto me emociona sólo al escribirlo. Me hace feliz ver cuando los alumnos se comprometen con su aprendizaje, cuando descubren que aprenden, que pueden, y que les encanta hacerlo! Semillero es el lugar en el que hoy debo estar"</p>
@@ -34,7 +34,7 @@ export default () => {
                     </div>
                     <div class="quieroSerParte__sembradoresReview__contenedor__item">
                         <div class="quieroSerParte__sembradoresReview__contenedor__item__img">
-                            <img class="img-fluid quieroSerParte__sembradoresReview__contenedor__item__img-img" src="http://via.placeholder.com/300x300" alt="Foto de un sembrador">
+                            <img class="img-fluid quieroSerParte__sembradoresReview__contenedor__item__img-img" src="./src/resources/images/review2.JPEG" alt="Foto de un sembrador">
                         </div>
                         <div class="quieroSerParte__sembradoresReview__contenedor__item__vendor">
                             <p class="quieroSerParte__sembradoresReview__contenedor__item__vendor-texto">"Es la posibilidad de devolver un poquito de las posibilidades que la vida me dio, y de recibir a cambio de eso un cariño enorme y unas ganas increíbles de aprender y superarse del otro lado."</p>
@@ -43,7 +43,7 @@ export default () => {
                     </div>
                     <div class="quieroSerParte__sembradoresReview__contenedor__item">
                         <div class="quieroSerParte__sembradoresReview__contenedor__item__img">
-                            <img class="img-fluid quieroSerParte__sembradoresReview__contenedor__item__img-img" src="http://via.placeholder.com/300x300" alt="Foto de un sembrador">
+                            <img class="img-fluid quieroSerParte__sembradoresReview__contenedor__item__img-img" src="./src/resources/images/review3.JPEG" alt="Foto de un sembrador">
                         </div>
                         <div class="quieroSerParte__sembradoresReview__contenedor__item__vendor">
                             <p class="quieroSerParte__sembradoresReview__contenedor__item__vendor-texto">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rem repellendus quisquam vel, fugit sunt libero iure nemo est. Nisi nemo facilis velit placeat minus repudiandae, aliquam illum ipsam cum?"</p>

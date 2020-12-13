@@ -9,7 +9,7 @@ export default () => {
                 <div class="cursos__contenedor__cursos">
                     <div class="cursos__contenedor__cursos__item">
                         <div class="cursos__contenedor__cursos__item__img">
-                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="https://via.placeholder.com/300x300" alt="Imagenes de cursos">
+                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="./src/resources/images/21.jpg" alt="Imagenes de cursos">
                         </div>
                         <div class="cursos__contenedor__cursos__item__vendor">
                             <h1 class="cursos__contenedor__cursos__item__vendor-titulo">Potenciá tus proyectos con Facebook e Instagram</h1>
@@ -22,7 +22,7 @@ export default () => {
                     </div>
                     <div class="cursos__contenedor__cursos__item par">
                         <div class="cursos__contenedor__cursos__item__img">
-                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="https://via.placeholder.com/300x300" alt="Imagenes de cursos">
+                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="./src/resources/images/14.jpg" alt="Imagenes de cursos">
                         </div>
                         <div class="cursos__contenedor__cursos__item__vendor">
                             <h1 class="cursos__contenedor__cursos__item__vendor-titulo">Aprende a hacer publicidad en Google</h1>
@@ -40,7 +40,7 @@ export default () => {
                     </div>
                     <div class="cursos__contenedor__cursos__item">
                         <div class="cursos__contenedor__cursos__item__img">
-                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="https://via.placeholder.com/300x300" alt="Imagenes de cursos">
+                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="./src/resources/images/20.jpg" alt="Imagenes de cursos">
                         </div>
                         <div class="cursos__contenedor__cursos__item__vendor">
                             <h1 class="cursos__contenedor__cursos__item__vendor-titulo">Vendé en Mercado Libre como un profesional</h1>
@@ -57,7 +57,7 @@ export default () => {
                     </div>
                     <div class="cursos__contenedor__cursos__item par">
                         <div class="cursos__contenedor__cursos__item__img">
-                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="https://via.placeholder.com/300x300" alt="Imagenes de cursos">
+                            <img class="img-fluid cursos__contenedor__cursos__item__img-img" src="./src/resources/images/11.jpg" alt="Imagenes de cursos">
                         </div>
                         <div class="cursos__contenedor__cursos__item__vendor">
                             <h1 class="cursos__contenedor__cursos__item__vendor-titulo">Construcción y gestión de un sitio web</h1>

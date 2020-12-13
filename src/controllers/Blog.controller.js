@@ -10,7 +10,7 @@ export default () => {
                 <div class="blog__contenedor__entradas">
                     <div class="blog__contenedor__entradas__item principal">
                         <div class="principal blog__contenedor__entradas__item__img">
-                            <img class="principal img-fluid blog__contenedor__entradas__item__img-img" src="http://via.placeholder.com/300x300" alt="Imagen del blog que tiene a estudiantes con su certificado">
+                            <img class="principal img-fluid blog__contenedor__entradas__item__img-img" src="./src/resources/images/blog1.JPEG" alt="Imagen del blog que tiene a estudiantes con su certificado">
                         </div>
                         <div class="blog__contenedor__entradas__item__vendor">
                             <h2 class="principal blog__contenedor__entradas__item__vendor-titulo">Semillero digital: profesionales de la informática capacitan a jóvenes de barrios vulnerables</h2>
@@ -24,7 +24,7 @@ export default () => {
                     <div class="contenedor__item">
                         <div class="blog__contenedor__entradas__item">
                             <div class="blog__contenedor__entradas__item__img">
-                                <img class="img-fluid blog__contenedor__entradas__item__img-img" src="http://via.placeholder.com/300x300" alt="Imagen del blog que tiene a estudiantes con su certificado">
+                                <img class="img-fluid blog__contenedor__entradas__item__img-img" src="./src/resources/images/blog2.JPEG" alt="Imagen del blog que tiene a estudiantes con su certificado">
                             </div>
                             <div class="blog__contenedor__entradas__item__vendor">
                                 <h2 class="blog__contenedor__entradas__item__vendor-titulo">Los oficios digitales más buscados del mercado laboral y la oportunidad de la Argentina</h2>
@@ -37,7 +37,7 @@ export default () => {
                         </div>
                         <div class="blog__contenedor__entradas__item">
                             <div class="blog__contenedor__entradas__item__img">
-                                <img class="img-fluid blog__contenedor__entradas__item__img-img" src="http://via.placeholder.com/300x300" alt="Imagen del blog que tiene a estudiantes con su certificado">
+                                <img class="img-fluid blog__contenedor__entradas__item__img-img" src="./src/resources/images/blog3.JPEG" alt="Imagen del blog que tiene a estudiantes con su certificado">
                             </div>
                             <div class="blog__contenedor__entradas__item__vendor">
                                 <h2 class="blog__contenedor__entradas__item__vendor-titulo">Razones por las que la educación online es más efectiva</h2>
@@ -50,7 +50,7 @@ export default () => {
                         </div>
                         <div class="blog__contenedor__entradas__item">
                             <div class="blog__contenedor__entradas__item__img">
-                                <img class="img-fluid blog__contenedor__entradas__item__img-img" src="http://via.placeholder.com/300x300" alt="Imagen del blog que tiene a estudiantes con su certificado">
+                                <img class="img-fluid blog__contenedor__entradas__item__img-img" src="./src/resources/images/blog4.JPG" alt="Imagen del blog que tiene a estudiantes con su certificado">
                             </div>
                             <div class="blog__contenedor__entradas__item__vendor">
                                 <h2 class="blog__contenedor__entradas__item__vendor-titulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
