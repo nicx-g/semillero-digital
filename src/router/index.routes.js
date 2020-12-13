@@ -3,6 +3,7 @@ import Contacto from '../controllers/Contacto.controller.js'
 import PostulacionSembradoresForm from '../controllers/quieroSerParte/PostulacionSembradores.form.controller.js'
 import QuieroSerParte from '../controllers/quieroSerParte/QuieroSerParte.controller.js'
 import Newsletter from '../controllers/global/Newsletter.controller.js'
+import Blog from '../controllers/Blog.controller.js'
 
 // Importamos todos los componentes con su lógica correspondiente
 
@@ -23,8 +24,13 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
         case '#/home':{
             return root.appendChild(Home())
         }
+
         case '#/contacto':{
             return root.appendChild(Contacto())
+        }
+        
+        case '#/blog':{
+            return root.appendChild(Blog())
         }
 
         case '#/quiero-ser-parte':{

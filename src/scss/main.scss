@@ -1,8 +1,9 @@
-@import './components/variables';
-@import './components/global';
+@import './components/global/variables';
+@import './components/global/global';
 
 // @import './components/quienesSomos/presentacion';
 @import './components/contacto/contacto';
 @import './components/quieroSerParte/postulacionSembradoresForm';
 @import './components/quieroSerParte/quieroserParte';
 @import './components/global/newsletter';
+@import './components/blog/blog.scss';
