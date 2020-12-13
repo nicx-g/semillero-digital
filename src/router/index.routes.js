@@ -5,6 +5,7 @@ import QuieroSerParte from '../controllers/quieroSerParte/QuieroSerParte.control
 import Newsletter from '../controllers/global/Newsletter.controller.js'
 import Blog from '../controllers/Blog.controller.js'
 import Cursos from '../controllers/Cursos.controller.js'
+import NavBar from '../controllers/global/Nav.controller.js'
 
 // Importamos todos los componentes con su lógica correspondiente
 
@@ -23,23 +24,42 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
         }
         
         case '#/home':{
-            return root.appendChild(Home())
+            return (
+                root.appendChild(NavBar()),
+                root.appendChild(Home()),
+                root.appendChild(Newsletter())
+             )
         }
 
         case '#/contacto':{
-            return root.appendChild(Contacto())
+            return (
+                root.appendChild(NavBar()),
+                root.appendChild(Contacto()),
+                root.appendChild(Newsletter())
+            )
+            
         }
         
         case '#/blog':{
-            return root.appendChild(Blog())
+            return (
+                root.appendChild(NavBar()),
+                root.appendChild(Blog()),
+                root.appendChild(Newsletter())
+            )
         }
         case '#/cursos':{
-            return root.appendChild(Cursos())
+            return (
+                root.appendChild(NavBar()),
+                root.appendChild(Cursos()),
+                root.appendChild(Newsletter())
+             )
         }
 
         case '#/quiero-ser-parte':{
             return (
-                root.appendChild(QuieroSerParte())
+                root.appendChild(NavBar()),
+                root.appendChild(QuieroSerParte()),
+                root.appendChild(Newsletter())
             )
         }
 
