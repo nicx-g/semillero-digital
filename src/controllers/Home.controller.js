@@ -13,7 +13,7 @@ export default () => {
                 
           </div>
           <div class="col-sm">
-            <img src="./src/resources/images/16.png" class="figure-img img-fluid rounded img__size1"  alt="nosotros"> 
+            <img src="./src/resources/images/16.jpg" class="figure-img img-fluid rounded img__size1"  alt="nosotros"> 
           </div>
           
         </div>

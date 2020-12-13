@@ -5,7 +5,7 @@ export default () => {
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="http://via.placeholder.com/150x80" alt="Logo de Semillero Digital"></a>
+            <a class="navbar-brand" href="#"><img width="200px" height="auto" src="./src/resources/images/semillero_logo.png" alt="Logo de Semillero Digital"></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">

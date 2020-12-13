@@ -28,7 +28,7 @@ export default () => {
                         </div>
                     </div>
                     <div class="contacto__redesSociales__contenedor__img">
-                        <img class="contacto__redesSociales__contenedor__img-img img-fluid" src="https://via.placeholder.com/250x200" alt="Descripción a definir">
+                        <img width="300px" class="contacto__redesSociales__contenedor__img-img img-fluid" src="./src/resources/images/20.JPG" alt="Descripción a definir">
                     </div>
                 </div>
             </div>
