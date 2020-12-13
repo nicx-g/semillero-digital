@@ -1,0 +1,92 @@
+.cursos{
+
+    &__contenedor{
+
+        &__vendor{
+
+            &-titulo{
+                text-align:center;
+            }
+        }
+
+        &__cursos{
+            padding: 20px 0;
+
+            &__item{
+                margin: 20px 0;
+                padding: 20px 0;
+
+                @media screen and (min-width:900px){
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                &.par{
+                    background-color: #FBFBFB;
+
+                    @media screen and (min-width:900px){
+                        display: flex;
+                        flex-direction: row-reverse;
+                    }
+                }
+                
+                &__img{
+
+                    @media screen and (min-width:900px){
+                        width: auto;
+                    }
+                }
+                
+                &__vendor{
+                    margin: 20px 0;
+
+                    @media screen and (min-width:900px){
+                        width: 40%;
+                        margin: 40px;
+                    }
+
+                    &-titulo, &-texto{
+                        font-size: 1.3rem;
+                        text-align:center;
+
+                        @media screen and (min-width:900px){
+                            font-size: 1.7rem;
+                            text-align: left;
+                        }
+                    }
+
+                    &-texto{
+                        margin-top: 20px;
+                        font-size: 1rem;
+                    }
+
+                    &__links{
+                        align-items:center;
+                        display: flex;
+                        justify-content: space-between;
+
+                        &-programa, &-testimonio{
+                            background-color: #A5DF2A;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 5px #000;
+                            color: #fff;
+                            font-size: .75rem;
+                            font-weight: bold;
+                            margin: 0 5px;
+                            padding: 9px;
+                            text-align: center;
+                            text-decoration: none;
+                            width: 100%;
+                        }
+
+                        &-testimonio{
+                            background-color: #fff;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
