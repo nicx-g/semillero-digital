@@ -10,7 +10,7 @@ export default () => {
     <div class="container">
         <div class="row feature-item mt-5 pt-5">
         <div class="col-lg-6 order-1 order-lg-2">    
-            <img src="/img/q1.png" class="img-fluid" alt="">
+            <img src="./src/resources/images/q1.png" class="img-fluid" alt="">
         </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
                     <h2 class="h2-title">¿Qué es Semillero Digital?</h2>
@@ -103,24 +103,7 @@ export default () => {
       </div>
 </div>
 </section>
-
-<section id="aliados" class="section-bg">
-    <div class="container text-center">
-        <h2>Aliados</h2>
-        <div class="owl-carousel" id="aliados-space">
-            <img src="/clients/client-9.png" alt="">
-            <img src="/clients/client-10.png" alt="">
-            <img src="/clients/client-11.png" alt="">
-            <img src="/clients/client-12.png" alt="">
-            <img src="/clients/client-13.png" alt="">
-            <img src="/clients/client-14.png" alt="">
-            <img src="/clients/client-15.png" alt="">
-            <img src="/clients/client-16.png" alt="">
-            <img src="/clients/client-17.png" alt="">
-        </div>
-    </div>
-</section>
-
+girt
 <section id="staff" class="section-bg">
     <h2>Staff sembrador</h2>
     <br>
