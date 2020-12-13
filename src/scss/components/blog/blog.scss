@@ -1,0 +1,119 @@
+.blog{
+    padding: 20px;
+
+    &__contenedor{
+
+        &__vendor{
+            margin: 25px 0;
+
+            &-titulo{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            &-text{
+                display:none;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            
+            @media screen and (min-width:900px){
+                
+                &-text{
+                    display:block
+                }
+            }
+        }
+
+        &__entradas{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .contenedor__item{
+
+                @media screen and (min-width: 900px){
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+
+            &__item{
+                margin: 20px 0;
+                box-shadow: 1px 1px 5px #000;
+
+                @media screen and (min-width: 900px){
+                    margin: 20px;
+                    width: 80%;
+
+                    &:nth-child(1).principal{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row-reverse;
+                    }
+                }
+
+                &__img{
+                    display: flex;
+                    justify-content: center;
+
+                    @media screen and (min-width: 900px){
+                        &.principal{
+                            width: 100%;
+                        }
+                    }
+                    &-img{
+                        width: 100%;;
+
+                        @media screen and (min-width: 900px){
+                            &.principal{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                &__vendor{
+                    padding: 20px;
+                    
+                    &-titulo{
+                        font-size: 1rem;
+
+                        @media screen and (min-width: 900px){
+                            &.principal{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+
+                    &-texto{
+                        font-size: .9rem;
+
+                        @media screen and (min-width: 900px){
+                            &.principal{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__subindices{
+                        display: flex;
+                        justify-content: space-between;
+
+                        &-fecha{
+                            font-size: .8rem;
+                        }
+
+                        &-link{
+                            color: #333;
+                            font-size: .9rem;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
