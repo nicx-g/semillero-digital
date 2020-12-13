@@ -2,6 +2,7 @@ import Home from "../controllers/Home.controller.js";
 import Contacto from '../controllers/Contacto.controller.js'
 import PostulacionSembradoresForm from '../controllers/quieroSerParte/PostulacionSembradores.form.controller.js'
 import QuieroSerParte from '../controllers/quieroSerParte/QuieroSerParte.controller.js'
+import Testimonios from '../controllers/Testimonios.controller.js'
 import Newsletter from '../controllers/global/Newsletter.controller.js'
 import Blog from '../controllers/Blog.controller.js'
 import Cursos from '../controllers/Cursos.controller.js'
@@ -28,6 +29,15 @@ const router = (route) => { // esta funcion va a hacer que dependiendo el hashta
             return (
                 root.appendChild(NavBar()),
                 root.appendChild(Home()),
+                root.appendChild(Newsletter()),
+                root.appendChild(Footer())
+             )
+        }
+
+        case '#/testimonios':{
+            return (
+                root.appendChild(NavBar()),
+                root.appendChild(Testimonios()),
                 root.appendChild(Newsletter()),
                 root.appendChild(Footer())
              )
