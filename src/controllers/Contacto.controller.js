@@ -98,29 +98,6 @@ export default () => {
                 </div>
             </div>
         </div>
-        <div class="contacto__newsletter">
-            <div class="container">
-                <div class="contacto__newsletter__contenedor">
-                    <div class="contacto__newsletter__contenedor__vendor">
-                        <h2 class="contacto__newsletter__contenedor__vendor-titulo">Suscribite al Newsletter</h2>
-                        <p class="contacto__newsletter__contenedor__vendor-texto">Para enterarte de las últimas novedades</p>
-                    </div>
-                    <form id="formularioNewsletter" class="contacto__newsletter__contenedor__form" method="POST">
-                        <div class="contacto__newsletter__contenedor__form__input">
-                            <input
-                            required 
-                            class="contacto__newsletter__contenedor__form__input-input"
-                            type="email">
-                            <i class="contacto__newsletter__contenedor__form__input-icono far fa-envelope"></i>
-                        </div>
-                        <div class="contacto__newsletter__contenedor__form__btn">
-                            <button class="contacto__newsletter__contenedor__form__btn-btn" type="submit">Enviar</button>
-                            <p class="contacto__newsletter__contenedor__form__btn-satisfactorio">¡Suscrito! ¡Muchas gracias!</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
     `
 
@@ -146,7 +123,6 @@ export default () => {
     // Elementos del DOM
 
     const formulario = divElement.querySelector('#contacto-formulario')
-    const formularioNewsletter = divElement.querySelector('#formularioNewsletter')
 
     const inputs = divElement.querySelectorAll('#contacto-formulario input')
     const textareas = divElement.querySelectorAll('#contacto-formulario textarea')
@@ -215,18 +191,6 @@ export default () => {
     textareas.forEach((textarea) => {
         textarea.addEventListener('keyup', validarFormulario)
         textarea.addEventListener('blur', validarFormulario)
-    })
-    
-    //Corresponde al formulario que está en el apartado de Newsletter y le devuelve al usuario una respuesta
-    
-    formularioNewsletter.addEventListener('submit', (e) => {
-        e.preventDefault();
-        formularioNewsletter.reset();
-        divElement.querySelector('.contacto__newsletter__contenedor__form__btn-satisfactorio').style.display = "block";
-
-        setTimeout(() => {
-            divElement.querySelector('.contacto__newsletter__contenedor__form__btn-satisfactorio').style.display = "none";
-        }, 5000)
     })
     
     //Corresponde al formulario que está en el apartado de Contacto. Valida los inputs y le devuelve al usuario una respuesta en caso de que esté todo bien

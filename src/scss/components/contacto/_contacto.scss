@@ -18,7 +18,6 @@
             }
 
             &__grupo{
-                align-items: start;
                 display: flex;
                 flex-direction: column;
                 width: 70%;
@@ -30,7 +29,6 @@
                 &__item{
                     align-items: center;
                     display:flex;
-                    justify-content: start;
 
                     &-texto{
                         color: black;
@@ -226,80 +224,5 @@
                 }
             }
         }
-    }
-
-    &__newsletter{
-        background-color: #E5E5E5;
-        padding: 20px 0;
-
-        &__contenedor{
-            display: flex;
-            flex-direction: column;
-
-            &__vendor{
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-    
-                &-titulo{
-                    font-size: 1rem;
-                }
-                &-texto{
-                    font-size:   .8rem;
-                }
-            }
-
-            &__form{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                &__input{
-                    position:relative;
-                    
-                    &-input{
-                        border: 2px solid transparent;
-                        border-radius: 5px;
-                        box-shadow: 1px 1px 5px black;
-                        padding: 5px 10px 5px 30px;;
-                        transition: .3s ease all;
-                        outline:none;
-                        resize: none;
-                        width: 100%;
-                    }
-
-                    &-icono{
-                        bottom: 10px;
-                        position: absolute;
-                        left: 10px;
-                        
-                        
-                    }
-                }
-
-                &__btn{
-
-                    &-btn{
-                        background-color: slateblue;
-                        border-radius: 5px;
-                        color: #fff;
-                        cursor: pointer;
-                        margin: 10px 0;
-                        margin-left: 10px;
-                        padding: 10px 20px;
-                        outline:none;
-                        text-align:center;
-                        width: 100%;
-                    }
-
-                    &-satisfactorio{
-                        color: green;
-                        display:none;
-                    }
-                }
-            }
-        }
-        
     }
 }
